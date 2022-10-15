@@ -7,6 +7,8 @@
 // @match              https://outlook.live.com/*
 // @icon               https://www.google.com/s2/favicons?sz=64&domain=live.com
 // @grant              none
+// @updateURL          https://raw.githubusercontent.com/logonoff/userscripts/main/outlook_adblock_reminder_block.user.js
+// @downloadURL        https://raw.githubusercontent.com/logonoff/userscripts/main/outlook_adblock_reminder_block.user.js
 // @run-at             document-body
 // @license            MIT
 // ==/UserScript==
