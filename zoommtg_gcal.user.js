@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Turn zoommtg:// uris into proper links
 // @namespace    https://logonoff.co/
-// @version      0.2.1
+// @version      0.2.2
 // @description  Google Calendar doesn't like to link zoommtg:// URIs when they are in the description. This turns zoommtg URIs in gcal event popups clickable links
 // @author       logonoff
-// @match        https://calendar.google.com/calendar/u/0/r
+// @match        https://calendar.google.com/calendar/*
 // @icon         https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_24.ico
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/logonoff/userscripts/main/zoommtg_gcal.user.js
