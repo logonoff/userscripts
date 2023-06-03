@@ -1,22 +1,34 @@
 // ==UserScript==
 // @name         google it on bing
 // @namespace    https://logonoff.co/
-// @version      0.4.0
+// @version      0.4.1
 // @description  cause sometimes bing aint doin it
 // @author       logonoff
 // @match        https://www.bing.com/search*
 // @updateURL    https://raw.githubusercontent.com/logonoff/userscripts/main/google_on_bing.user.js
 // @downloadURL  https://raw.githubusercontent.com/logonoff/userscripts/main/google_on_bing.user.js
+// @run-at       document-idle
 // ==/UserScript==
 
 (function() {
     'use strict';
-    /* uncomment for auto redirect
+    /*
+    // enable this for auto redirect
+    function openInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+
     window.addEventListener('load', setTimeout(function() {
-        window.location.replace(location.href.replace("bing.com", "google.com"));
+        if (location.href.toString().includes("Reward") || location.href.toString().includes("reward")) {
+            //console.log("damb");
+        } else {
+             window.location.replace(location.href.replace("bing.com", "google.com"));
+            //openInNewTab( location.href.replace("bing.com", "google.com"));
+        }
     }, 500));
     */
-
+    // Your code here...
 	function ready() {
 		document.querySelector("[role=\"search\"]").parentElement.insertAdjacentHTML("afterend", `
 			<style>#bruh::before, #bruh::after {position:absolute;top:40x; margin-top:40px;}</style>
@@ -35,7 +47,8 @@
 		`);
 	}
 
-	document.addEventListener("DOMContentLoaded", setTimeout(ready, 0));
+	ready();
+	// document.addEventListener("DOMContentLoaded", setTimeout(ready, 0));
 
 })();
 
