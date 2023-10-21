@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Block Outlook Adblock Reminder
 // @namespace          https://logonoff.co
-// @version            0.3
+// @version            0.3.1
 // @description        Remove Outlook "looks like you're using an adblock" reminder. i know. shut it
 // @author             logonoff
 // @match              https://outlook.live.com/*
@@ -23,7 +23,5 @@
 	        clearTimeout(task);
 	      }
 	    });
-
-		[...document.querySelectorAll("div")].filter((elem)=> {return elem.innerText == "Ad"}).forEach((elem) => { elem.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove() })
 	}, 150);
 })();
