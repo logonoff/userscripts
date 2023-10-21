@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Block Outlook Adblock Reminder
 // @namespace          https://logonoff.co
-// @version            0.1
+// @version            0.2
 // @description        Remove Outlook "looks like you're using an adblock" reminder. i know. shut it
 // @author             logonoff
 // @match              https://outlook.live.com/*
@@ -18,7 +18,7 @@
 
 	const task = setInterval(function() {
     Array.from(document.getElementsByTagName("span")).forEach(function(elem) {
-      if (elem.innerHTML === `It looks like you're using an ad blocker. To maximize the space in your inbox, sign up for <a href="https://windows.microsoft.com/outlook/ad-free-outlook" target="_blank">Ad-Free Outlook</a>.`) {
+      if (elem.innerHTML === `It looks like you're using an ad blocker. To maximize the space in your inbox, sign up for <a href="https://go.microsoft.com/fwlink/?linkid=2222646" target="_blank">Ad-Free Outlook</a>.`) {
         elem.parentNode.parentNode.parentNode.remove();
         clearTimeout(task);
       }
