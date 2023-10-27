@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google BG Pisazz
 // @namespace    https://logonoff.co/
-// @version      0.1.4
+// @version      0.1.5
 // @description  Add some pisazz to google sign on
 // @author       logonoff
 // @match        https://accounts.google.com/*
@@ -26,27 +26,21 @@ document.body.style.backgroundRepeat = "no-repeat"
 document.body.style.backgroundPosition = "top"
 document.body.style.backgroundOrigin = "center"
 document.body.style.backgroundAttachment = "fixed"
-document.querySelector(".VmOpGe").style.display = "none"
 document.body.style.backgroundSize = "100% 100%"
 
-
-if (document.querySelector(".darkreader") || document.querySelector("#nighteyedefaultcss") || document.querySelector("#darkmode")) {
-    document.body.style.backgroundImage = pisazz_imageDark;
-    document.body.style.backgroundColor = "black";
-    // console.log("yup")
-}
 
 setTimeout(function(){
     if (document.querySelector(".darkreader") || document.querySelector("#nighteyedefaultcss") || document.querySelector("#darkmode")) {
         document.body.style.backgroundImage = pisazz_imageDark;
         document.body.style.backgroundColor = "black";
     }
-    // console.log("yes")
 }, 500);
 
-document.getElementById("initialView").style.filter = "drop-shadow(0 10px 20px rgba(0,0,0,0.19))drop-shadow(0 6px 6px rgba(0,0,0,0.23))";
-// document.querySelector(".xkfVF").style.filter = "drop-shadow(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23))";
-// document.querySelector(".SSBsw").style.margin = "0";
-// document.querySelector(".jXeDnc").style.textAlign = "unset";
+document.getElementById("initialView").style.filter = "drop-shadow(0 10px 20px rgba(0,0,0,0.05))drop-shadow(0 6px 6px rgba(0,0,0,0.05))";
+
+[...document.querySelectorAll("div[aria-hidden='true']")].forEach(e => {
+	// target the white backdrop element google puts on the login
+	if (e.getBoundingClientRect().width == document.body.getBoundingClientRect().width) { e.style.background = "transparent"; }
+})
 
 })();
