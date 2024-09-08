@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google it on bing
 // @namespace    https://logonoff.co/
-// @version      0.4.1
+// @version      0.4.2
 // @description  cause sometimes bing aint doin it
 // @author       logonoff
 // @match        https://www.bing.com/search*
@@ -33,7 +33,7 @@
 		document.querySelector("[role=\"search\"]").parentElement.insertAdjacentHTML("afterend", `
 			<style>#bruh::before, #bruh::after {position:absolute;top:40x; margin-top:40px;}</style>
 			<div data-sbtip="Search with Google" id="bruh" style="display:inline-block;width: 1.05em;top: 4px;margin-left:-10px;margin-right: 14px;">
-				<a onclick="window.location.replace(location.href.replace(\'bing.com\', \'google.com\'));\" href="#">
+				<a href="${location.href.replace('bing.com', 'google.com')}">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 533.5 544.3">
 						<path d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4
 								 81.1-117.4 81.1-200.2z M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71
