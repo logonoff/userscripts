@@ -1,6 +1,6 @@
 # Userscripts
 
-Assorted userscripts for various websites. These are all written in JavaScript, and are intended to be used with a userscript manager like [Violentmonkey](https://violentmonkey.github.io/). MIT licensed, so go crazy >:)
+Assorted userscripts for various websites. These are all written in JavaScript, and are intended to be used with a userscript manager like [Violentmonkey](https://violentmonkey.github.io/). MIT licensed, so go crazy >:3
 
 ## [Google BG Pizzazz](https://github.com/logonoff/userscripts/blob/main/GoogleBGpisazz.user.js)
 
@@ -20,21 +20,13 @@ Auto-click "Continue Anyway" on Chrome Remote Desktop when on the unsupported br
 
 Adds a "Search on Google" button to Bing, so it's easy to get a second opinion
 
-## [oldgmail](https://github.com/logonoff/userscripts/blob/main/oldgmail.user.js)
-
-Adds the classic Gmail logo to the HTML-only view of Gmail.
-
-![Classic Gmail Logo](https://i.imgur.com/LX97Qh5.png)
-
 ## [outlook_adblock_reminder_block](https://github.com/logonoff/userscripts/blob/main/outlook_adblock_reminder_block.user.js)
 
 Blocks most ads from Outlook Web App for Non-Microsoft 365 users.
 
-
 ## [shalescroll](https://github.com/logonoff/userscripts/blob/main/shalescroll.user.js)
 
 Adds the scrollbar from [shalecss](https://github.com/logonoff/shalecss) into all of the pages you browse
-
 
 ## [zoommtg_gcal](https://github.com/logonoff/userscripts/blob/main/zoommtg_gcal.user.js)
 
