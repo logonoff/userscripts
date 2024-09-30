@@ -2,11 +2,11 @@
 
 Assorted userscripts for various websites. These are all written in JavaScript, and are intended to be used with a userscript manager like [Violentmonkey](https://violentmonkey.github.io/). MIT licensed, so go crazy >:3
 
-## [Google BG Pizzazz](https://github.com/logonoff/userscripts/blob/main/GoogleBGpisazz.user.js)
+## [Google BG Pizazz](https://github.com/logonoff/userscripts/blob/main/GoogleBGpisazz.user.js)
 
 Adds the login background from the 2017 Google Login page into the current one. Supports [Dark Reader](https://github.com/darkreader/darkreader) and [Nighteye](https://nighteye.app/)!
 
-![Screenshot of Google BG Pizzazz working](https://i.imgur.com/8gys2BP.png)
+![Screenshot of Google BG Pizazz working](https://i.imgur.com/yu0ypdY.png)
 
 ## [HypixelRewardSkip](https://github.com/logonoff/userscripts/blob/main/HypixelRewardSkip.user.js)
 
