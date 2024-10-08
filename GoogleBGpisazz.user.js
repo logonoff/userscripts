@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google BG Pisazz
 // @namespace    https://logonoff.co/
-// @version      0.2.0
+// @version      0.3.0
 // @description  Add some pisazz to google sign on
 // @author       logonoff
 // @match        https://accounts.google.com/*
@@ -33,8 +33,8 @@ loginContainer.style.backgroundSize = "100% 100%"
 
 
 setTimeout(function(){
-    if (document.querySelector(".darkreader") || document.querySelector("#nighteyedefaultcss") || document.querySelector("#darkmode")) {
-        document.body.style.backgroundImage = pisazz_imageDark;
+    if (document.querySelector(".darkreader") || document.querySelector("#nighteyedefaultcss") || document.querySelector("#darkmode") || window.matchMedia("prefers-color-scheme: dark")) {
+        loginContainer.style.backgroundImage = pisazz_imageDark;
         document.body.style.backgroundColor = "black";
     }
 }, 500);
