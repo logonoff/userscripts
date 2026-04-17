@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Instagram: Disable repost button
 // @namespace          https://logonoff.co
-// @version            0.0.1
+// @version            0.0.2
 // @description        Makes the repost button inoperable
 // @author             logonoff
 // @match              https://www.instagram.com/*
@@ -18,10 +18,12 @@ window.onload = () => {
 
   const styles =
 `
-section > div:has([aria-label="Repost"]) div:has([aria-label="Repost"]) {
+section > div:has([aria-label="Repost"]) [role="button"]:has([aria-label="Repost"]) {
   user-select: none !important;
   pointer-events: none !important;
   cursor: not-allowed !important;
+  touch-action: none !important;
+  opacity: 0.5 !important;
 }
 `;
 
